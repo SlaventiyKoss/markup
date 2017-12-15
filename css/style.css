@@ -60,6 +60,7 @@ body {
     font-size: 22px;
     padding-right: calc(100%/8);
 }
+
 .top-line .navigate ul>li:last-child {
     padding-right: 0;
 }
@@ -70,6 +71,7 @@ body {
 
 .banner .image {
     float: left;
+    /*width: 30%;*/
     width: 344px;
     height: 345px;
     padding-left: 88px;
@@ -79,7 +81,7 @@ body {
 .desc {
     float: left;
     width: 50%;
-    margin-left: 72px;
+    margin-left: 63px;
 }
 
 .desc h2 {
@@ -257,10 +259,77 @@ body {
 
 
 
-@media (max-width: 992px) {
+@media (max-width: 995px) {
+    .banner .image {
+        padding-left: 15px;
+        margin-bottom: 95px;
+    }
 
+    .top-line .logo {
+        padding-left: 20px;
+    }
+
+    .desc {
+        float: left;
+        width: 50%;
+        margin-left: 63px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 844px) {
+    .desc {
+        width: 50%;
+        margin-left: 10px;
+    }
+}
 
+@media (max-width: 717px) {
+    .banner .image {
+        padding-left: 0;
+    }
+    .desc {
+        width: 50%;
+        margin-left: 10px;
+    }
+    .top-line .navigate ul>li {
+        font-size: 22px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .banner .image {
+        float: left;
+        width: 100px;
+        height: 100px;
+        padding-left: 88px;
+        margin-bottom: 95px;
+    }
+    .image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .desc h2,
+    .desc span {
+        font-size: 18px;
+    }
+
+    .top-line .navigate ul>li {
+        display: block;
+        font-size: 22px;
+        padding-right: 0;
+    }
+
+    .bottom-img {
+        display: block;
+        float: none;
+        width: 90%;
+    }
+
+    .bottom-list {
+        display: block;
+        float: none;
+        width: 90%;
+    }
 }
